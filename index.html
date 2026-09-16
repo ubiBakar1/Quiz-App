@@ -4,9 +4,83 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
+    <!-- REMIX ICON -->
     <link href="src/output.css" rel="stylesheet" />
   </head>
-  <body>
-    <script></script>
+  <body class="flex items-center justify-center min-h-screen bg-orange-100">
+    <!-- Start Card -->
+    <div class="card text-center lg:zoom-120 lg:min-w-212.5" id="start-card">
+      <h2 class="text-2xl md:text-[28px] text-gradient">
+        General Knowledge Quiz
+      </h2>
+      <p class="text-slate-500 md:text-lg mb-4">
+        Can you answer all these general knowledge questions under 10 seconds
+        each?
+      </p>
+
+      <div class="button md:text-lg" id="start-btn">
+        <button class="cursor-pointer">Start</button>
+        <i class="ri-arrow-right-line"></i>
+      </div>
+    </div>
+
+    <!-- Quiz Card -->
+    <div
+      class="card text-center display-none lg:zoom-120 lg:min-w-212.5"
+      id="quiz-card"
+    >
+      <h2 class="text-xl font-semibold" id="question">Quiz Questions</h2>
+
+      <div class="flex justify-between">
+        <p class="text-slate-500 mb-4">
+          Question <span id="current-question-num"></span> of
+          <span id="total-question-num"></span>
+        </p>
+        <p class="text-slate-500 mb-4">Score: <span id="score"></span></p>
+      </div>
+
+      <!-- Options -->
+      <div class="flex flex-col gap-2 mb-4" id="options"></div>
+
+      <!-- Timer -->
+      <p class="text-slate-500 mb-4">
+        Time left: <span id="timer-display">10</span> seconds
+      </p>
+
+      <!-- Progress Bar -->
+      <div
+        class="w-full bg-[#e0e0e0] overflow-hidden rounded-full"
+        id="progress-container"
+      >
+        <div class="progress-bar" id="progress-bar"></div>
+      </div>
+    </div>
+
+    <!-- Results Card -->
+    <div
+      class="card text-center display-none md:min-w-125 lg:zoom-120 lg:min-w-150"
+      id="result-card"
+    >
+      <h2 class="text-2xl text-gradient md:text-[28px]">Quiz Results</h2>
+
+      <div
+        class="w-75 h-50 bg-[#fffbf5] border-[#ffc880] border-solid border-2 m-auto rounded-xl flex-col justify-center items-center flex mb-4 px-2 md:px-3"
+      >
+        <p class="font-semibold mb-4 md:text-lg">
+          Final Score: <span id="final-score"></span>
+        </p>
+        <span
+          class="text-gradient font-semibold text-xl md:text-2xl"
+          id="result-message"
+        ></span>
+      </div>
+
+      <div class="button md:text-lg" id="restart-btn">
+        <button class="cursor-pointer">Restart</button>
+        <i class="ri-arrow-right-line"></i>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
