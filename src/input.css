@@ -1,1 +1,106 @@
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Average+Sans&family=Lexend:wght@100..900&display=swap");
+
+@theme {
+  --main-gradient: linear-gradient(
+    to right,
+    hsl(12, 100%, 55%),
+    hsl(26, 100%, 57%)
+  );
+}
+
+@layer base {
+  body {
+    font-family: "Average Sans", sans-serif;
+    overflow: hidden;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: "Lexend", sans-serif;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+  }
+}
+
+@layer components {
+  .card {
+    min-width: 400px;
+    background-color: hsl(0, 0%, 98%);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 4px 4px 6px hsla(0, 0%, 0%, 0.1);
+    margin: 1.5rem;
+    overflow: hidden;
+  }
+
+  .button {
+    display: inline-flex;
+    cursor: pointer;
+    align-items: center;
+    gap: 0.4rem;
+    justify-content: center;
+    background-color: hsl(12, 100%, 55%);
+    color: white;
+    padding: 0.5rem 4rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: background-color 0.4s ease-in-out;
+  }
+  .button:hover {
+    background-color: hsl(12, 100%, 45%);
+  }
+  .button i {
+    transition: transform 0.4s ease-in-out;
+  }
+  .button:hover i {
+    transform: translateX(0.4rem);
+  }
+
+  .option-btn {
+    background-color: hsl(36, 100%, 98%);
+    border: hsl(34, 100%, 75%) 2px solid;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    color: hsl(0, 0%, 20%);
+    cursor: pointer;
+    transition:
+      background-color 0.2s ease-in-out,
+      border-color 0.2s ease-in-out;
+  }
+  .option-btn:hover {
+    background-color: hsl(36, 100%, 88%);
+    border-color: hsl(34, 100%, 65%);
+  }
+}
+
+@utility display-none {
+  display: none;
+}
+
+@utility progress-bar {
+  width: 0%;
+  height: 0.8rem;
+  background: var(--main-gradient);
+  transition: width 0.2s ease-in-out;
+}
+
+@utility text-gradient {
+  background: var(--main-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+@utility correct-answer {
+  background-color: hsl(115, 100%, 90%);
+  border-color: hsl(115, 100%, 60%);
+}
+
+@utility wrong-answer {
+  background-color: hsl(0, 100%, 90%);
+  border-color: hsl(0, 100%, 70%);
+}
