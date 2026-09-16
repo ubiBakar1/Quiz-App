@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "question": "What is the name of the empire that ruled the Middle East from 883 to 627 BC?",
+    "options": [
+      "The Babylonian Empire",
+      "The Merovingian Empire",
+      "The Persian Empire",
+      "The Assyrian Empire"
+    ],
+    "correctAnswer": "The Assyrian Empire"
+  },
+  {
+    "id": 2,
+    "question": "Whose adopted son was Emperor Augustus?",
+    "options": ["Diogenes", "Julius Caesar", "Nero", "Mark Antony"],
+    "correctAnswer": "Julius Caesar"
+  },
+  {
+    "id": 3,
+    "question": "Which major city put the first urban tram line into service in 1832?",
+    "options": ["New York", "London", "Berlin", "Vienna"],
+    "correctAnswer": "New York"
+  },
+  {
+    "id": 4,
+    "question": "What is the fourth state of matter called, after the states of gas, liquid and solid?",
+    "options": ["Plasma", "Jelly", "Ether", "Earth"],
+    "correctAnswer": "Plasma"
+  },
+  {
+    "id": 5,
+    "question": "By what name is the patella more generally called?",
+    "options": ["Paella", "Kneecap", "Spread", "Shoulder blade"],
+    "correctAnswer": "Kneecap"
+  },
+  {
+    "id": 6,
+    "question": "Which gas planet is the largest planet in the Solar System?",
+    "options": ["Jupiter", "Saturn", "Uranus", "Neptune"],
+    "correctAnswer": "Jupiter"
+  },
+  {
+    "id": 7,
+    "question": "What is the common, more popular name for an orca?",
+    "options": ["White shark", "Calf", "Beluga", "Killer whale"],
+    "correctAnswer": "Killer whale"
+  },
+  {
+    "id": 8,
+    "question": "How many keys are there on a piano keyboard?",
+    "options": ["88", "86", "84", "82"],
+    "correctAnswer": "88"
+  },
+  {
+    "id": 9,
+    "question": "What animal can live on for several days without its head?",
+    "options": ["Duck", "Chicken", "Ant", "Cockroach"],
+    "correctAnswer": "Cockroach"
+  },
+  {
+    "id": 10,
+    "question": "Which of these countries have a flag that is different on either side?",
+    "options": ["Bahamas", "Costa Rica", "Denmark", "Paraguay"],
+    "correctAnswer": "Paraguay"
+  }
+]
